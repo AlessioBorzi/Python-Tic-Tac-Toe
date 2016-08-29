@@ -104,7 +104,6 @@ def on_draw():
 
 @window.event
 def on_mouse_press(x, y, button, modifiers):
-	print "mouse"
 	if button == mouse.LEFT:
 		if mytris.start == True:
 			mytris.start = False
@@ -113,7 +112,6 @@ def on_mouse_press(x, y, button, modifiers):
 			mytris.restart = False
 			return 0
 		else:
-			print "%d , %d" % (x, y)
 			x = int(x//300)
 			y = int(y//300)
 			print "%d , %d" % (x, y)
